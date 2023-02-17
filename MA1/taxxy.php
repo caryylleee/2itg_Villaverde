@@ -51,7 +51,7 @@
                 		</label>
             	</div>
 
-				<input type="submit" name="sub" value="COMPUTE">
+				<input type="submit" name="compute" value="COMPUTE">
 				<br>
 
 				<!--Results-->
