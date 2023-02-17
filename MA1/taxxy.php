@@ -10,6 +10,7 @@
 </head>
 
 		<body>
+		<br>
 		<h1>Welcome to TAXXY!</h1>
 		<hr>
 
@@ -30,8 +31,7 @@
                         <label>
                             <input type="text" id="color" checked="checked" />
                         </label>
-
-                	</div>
+                </div>
 
 				<br>
 
@@ -42,16 +42,14 @@
 							<br>
                         </legend>
 
-                        <label>
-                            <span class="sub-link">Bi-Monthly</span>
-                            <input type="radio" id="color" name="salary_type" value="Bi-Monthly" checked="checked" />
-                        </label>
+						<label>
+								<p><input type="radio" id="color" name="salary_type" value="Bi-Monthly" checked="checked"/>Bi-Monthly</p>
+                		</label>
 
-                        <label>
-                            <span class="sub-link">Monthly</span>
-                            <input type="radio" id="color" name="salary_type" value="Monthly" />
-                        </label>
-                	</div>
+						<label>
+								<p><input type="radio" id="color" name="salary_type" value="Monthly"/>Monthly</p>
+                		</label>
+            	</div>
 
 				<input type="submit" name="sub" value="COMPUTE">
 				<br>
