@@ -8,8 +8,15 @@
 /*Background gradient color*/
 body
 {
-    background-image: linear-gradient(to bottom right, #AD8E70, #E8C4C4);
+    background-image: linear-gradient(to bottom right, #FFD56F, #FFD4B2, #B99B6B, #F1DBBF, #AD8E70, #E8C4C4, #FFD56F);
     overflow: hidden;
+}
+
+hr
+{
+    border: #3C2A21;
+    background-color: #3C2A21;
+    height: 2px;
 }
 
 /*Text*/
@@ -121,7 +128,7 @@ input[type=submit]
     border: none;
     border-radius: 4px;
     color: black;
-    background-color: #F1DBBF;
+    background-color: #C98474;
     font-weight: bold;
     padding: 15px 32px;
     text-align: center;
