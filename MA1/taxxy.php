@@ -12,7 +12,7 @@
 		<body>
 		<!--Backend-->
 		<?php
-		//Get method
+				//Get method
 				if (isset($_GET['compute']))
 				{
 					$salary = $_GET["salary"] ;
