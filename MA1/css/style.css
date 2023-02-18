@@ -6,6 +6,12 @@
 }
 
 /*Background gradient color*/
+.result
+{
+    background-image: linear-gradient(to bottom right, #AA5656, #F5EAEA, #B99B6B, #C27664, #CFB997, #E8C4C4, #FFD56F);
+    overflow: hidden;
+}
+
 body
 {
     background-image: linear-gradient(to bottom right, #FFD56F, #FFD4B2, #B99B6B, #F1DBBF, #AD8E70, #E8C4C4, #FFD56F);
@@ -54,12 +60,22 @@ p
 }
 
 /*Container Form*/
+.solid-bg1 
+{
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    height: 20%;
+    padding: 2.5rem;
+    margin: auto;
+}
+
 .solid-bg 
 {
     background-color: #fff;
     border-radius: 4px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-    height: 40%;
+    height: 25%;
     padding: 2.5rem;
     margin: auto;
 }

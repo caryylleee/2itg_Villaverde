@@ -121,15 +121,15 @@
 
 		<!--Frontend Design-->
 		<br>
-		<h1>Here's your result!</h1>
+		<h1>Here's the result!</h1>
 		<hr>
 
 		<br>
-        <h3>Thank you for using this tax calculator. Hope it helps!</h3>
+        <h3>Thank you for using this tax calculator. Hope it helped you!</h3>
 
 			<div class="container">
 				<form action="result.php" method="get">
-				<div class="form-container solid-bg">
+				<div class="form-container solid-bg1">
 
                 <!--Results-->
 				<br><?php echo "Your Annual Salary is: ₱ $salary pesos only.<br>"; ?>
