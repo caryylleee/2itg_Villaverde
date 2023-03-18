@@ -105,15 +105,15 @@ $cake1->displayInfo();
 
 echo "<br/>";
 
-$cake2 = new KalleCafe("Dine-in", "A slice of Blueberry Cheesecake", 649, "Ms. Micole");
+$cake2 = new KalleCafe("Dine-in", "A slice of Blueberry Cheesecake", 139, "Ms. Micole");
 $cake2->printInfo();
 
 echo "<br/>";
 
-$cake4 = new SpongeCake();
-$cake4->setorderType("Dine-in");
-$cake4->setcakeType("Salted Caramel");
-$cake4->setcakePrice(1649);
-$cake4->displayInfo();
+$cake3 = new SpongeCake();
+$cake3->setorderType("Dine-in");
+$cake3->setcakeType("Salted Caramel");
+$cake3->setcakePrice(1649);
+$cake3->displayInfo();
 
 ?>
