@@ -1,5 +1,6 @@
 <?php
 
+// Parent Class
 class Cake    
 {
     // Member Variables
@@ -47,6 +48,7 @@ class Cake
     }
 }
 
+// Child Class
 class KalleCafe extends Cake
 {
     // Additional Member Variable
@@ -69,6 +71,18 @@ class KalleCafe extends Cake
         echo "The cake that you ordered is: $this->cakeType <br>";
         echo "Your cake costs: $this->cakePrice <br>";
     }
+}
+
+// Multilevel Inheritance
+class Multilevel extends CakePops
+{
+
+}
+
+// Hierarchical Inheritance
+class Hierarchical extends SpongeCake
+{
+
 }
 
 // Creating a new object
