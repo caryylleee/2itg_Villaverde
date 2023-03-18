@@ -4,8 +4,8 @@ class Cake
 {
     // Member Variables
     private $orderType;
-    private $string;
-    private $int; 
+    private $cakeType;
+    private $cakePrice; 
 
     // Customized setters and getters
     public function setorderType($orderType)
@@ -15,36 +15,43 @@ class Cake
 
     public function getorderType($orderType)
     {
-        $this->orderType = $orderType;
+        return $this->orderType;
     }
 
-    public function setString($string)
+    public function setcakeType($cakeType)
     {
-        $this->string = $string;
+        $this->cakeType = $cakeType;
     }
 
-    public function getString($string)
+    public function getcakeType($cakeType)
     {
-        $this->string = $string;
+        return $this->cakeType;
     }
 
-    public function setInt($int)
+    public function setcakePrice($cakePrice)
     {
-        $this->int = $int;
+        $this->cakePrice = $cakePrice;
     }
 
-    public function getInt($int)
+    public function getcakePrice($cakePrice)
     {
-        $this->int = $int;
+        return $this->cakePrice;
     }
-    
+
+    // Methods
+    public function displayInfo()
+    {
+        echo "Your order type is: $this->orderType <br>";
+        echo "The cake that you ordered is: $this->cakeType <br>";
+        echo "Your cake costs: $this->cakePrice <br>";
+    }
 }
 
 // Creating a new object
 $cake1 = new Cake();
-
-$cake 1->$orderType = 'Takeout';
-$cake 1->$string = 'Choco Mousse';
-$cake 1->$int = 649;
+$cake1->setorderType("Takeout");
+$cake1->setcakeType("Choco Mousse");
+$cake1->setcakePrice(649);
+$cake1->displayInfo();
 
 ?>
