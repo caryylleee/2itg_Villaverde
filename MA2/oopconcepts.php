@@ -40,4 +40,11 @@ class Cake
     
 }
 
+// Creating a new object
+$cake1 = new Cake();
+
+$cake 1->$orderType = 'Takeout';
+$cake 1->$string = 'Choco Mousse';
+$cake 1->$int = 649;
+
 ?>
