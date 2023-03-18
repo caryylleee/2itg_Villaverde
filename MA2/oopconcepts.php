@@ -7,6 +7,36 @@ class Cake
     private $string;
     private $int; 
 
+    // Customized setters and getters
+    public function setorderType($orderType)
+    {
+        $this->orderType = $orderType;
+    }
+
+    public function getorderType($orderType)
+    {
+        $this->orderType = $orderType;
+    }
+
+    public function setString($string)
+    {
+        $this->string = $string;
+    }
+
+    public function getString($string)
+    {
+        $this->string = $string;
+    }
+
+    public function setInt($int)
+    {
+        $this->int = $int;
+    }
+
+    public function getInt($int)
+    {
+        $this->int = $int;
+    }
     
 }
 
