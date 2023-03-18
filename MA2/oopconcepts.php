@@ -47,11 +47,42 @@ class Cake
     }
 }
 
+class KalleCafe extends Cake
+{
+    // Additional Member Variable
+    private $customerName;
+
+    // Customized setters and getters
+    public function setcustomerName($customerName)
+    {
+        $this->customerName = $customerName;
+    }
+
+    public function getcustomerName($customerName)
+    {
+        return $this->customerName;
+    }
+
+    // Additional Method
+    function printInfo()
+    {
+        echo "<br> <br> Your name is: $this->customerName <br>";
+    }
+}
+
 // Creating a new object
 $cake1 = new Cake();
-$cake1->setorderType("Takeout");
+$cake1->setorderType("Take-out");
 $cake1->setcakeType("Choco Mousse");
 $cake1->setcakePrice(649);
+$cake1->displayInfo();
+
+$cake2 = new KalleCafe();
+$cake2->setcustomername("Ms. Micole");
+$cake2->setorderType("Dine-in");
+$cake2->setcakeType("A slice of Blueberry Cheesecake");
+$cake2->setcakePrice(135);
+$cake2->printInfo();
 $cake1->displayInfo();
 
 ?>
