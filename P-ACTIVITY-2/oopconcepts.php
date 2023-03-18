@@ -55,7 +55,7 @@ class KalleCafe extends Cake
     // Additional Member Variable
     private $customerName;
 
-    // Customized setters and getters
+    // Parameterized constructor and customized getter
     public function __construct($orderType, $cakeType, $cakePrice, $customerName)
     {
         $this->orderType = $orderType;
