@@ -42,6 +42,7 @@ class Cake
     // Methods
     public function displayInfo()
     {
+        echo "ORDER DETAILS <br>";
         echo "Your order type is: $this->orderType <br>";
         echo "The cake that you ordered is: $this->cakeType <br>";
         echo "Your cake costs: $this->cakePrice <br>";
@@ -63,26 +64,36 @@ class KalleCafe extends Cake
         $this->customerName = $customerName;
     }
 
+    public function getcustomerName()
+    {
+        return $this->customerName;
+    }
+
     // Additional Method
     function printInfo()
     {
-        echo "<br> <br> Your name is: $this->customerName <br>";
+        echo "ORDER DETAILS <br>";
+        echo "Your name is: $this->customerName <br>";
         echo "Your order type is: $this->orderType <br>";
         echo "The cake that you ordered is: $this->cakeType <br>";
         echo "Your cake costs: $this->cakePrice <br>";
     }
 }
 
-// Multilevel Inheritance
-class Multilevel extends CakePops
+// Multilevel
+class CakePops extends KalleCafe
 {
 
 }
 
-// Hierarchical Inheritance
-class Hierarchical extends SpongeCake
+// Hierarchical
+class SpongeCake extends Cake 
 {
-
+    public function displayInfo()
+    {
+        parent::displayInfo();
+        echo "We hope you enjoyed your order here at Kalle Cafe! See you soon again. :)";
+    }
 }
 
 // Creating a new object
@@ -92,7 +103,17 @@ $cake1->setcakeType("Choco Mousse");
 $cake1->setcakePrice(649);
 $cake1->displayInfo();
 
+echo "<br/>";
+
 $cake2 = new KalleCafe("Dine-in", "A slice of Blueberry Cheesecake", 649, "Ms. Micole");
 $cake2->printInfo();
+
+echo "<br/>";
+
+$cake4 = new SpongeCake();
+$cake4->setorderType("Dine-in");
+$cake4->setcakeType("Salted Caramel");
+$cake4->setcakePrice(1649);
+$cake4->displayInfo();
 
 ?>
